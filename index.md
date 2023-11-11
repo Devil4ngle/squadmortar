@@ -1,5 +1,5 @@
 <h1 id="squadautomortars">SquadAutoMortars</h1>
-<p><a href="https://www.youtube.com/watch?v=uF3VQAWmt88"><img src="https://img.youtube.com/vi/uF3VQAWmt88/0.jpg" alt="Watch the Demo Video"></a></p>
+<p><a href="https://www.youtube.com/embed/uF3VQAWmt88"><img src="https://img.youtube.com/vi/uF3VQAWmt88/hqdefault.jpg" alt="Watch the video"></a></p>
 <h2 id="overview">Overview</h2>
 <p>SquadAutoMortars is a tool designed to enhance your gaming experience in Squad by automating mortar control and providing a synchronized map overlay. This tool is created with the goal of improving mortar adjustments and map coordination.</p>
 <h2 id="requirements">Requirements</h2>
