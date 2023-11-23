@@ -4,7 +4,7 @@ title: SquadAutoMortars
 
 # SquadAutoMortars
 
-<iframe width="80%" height="0" style="padding-bottom: 56.25%;" src="https://www.youtube.com/embed/uF3VQAWmt88" allowfullscreen
+<iframe width="80%" height="400px" src="https://www.youtube.com/embed/uF3VQAWmt88" allowfullscreen
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   alt="SquadAutoMortars Demo Video"></iframe>
 
