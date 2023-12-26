@@ -29,11 +29,11 @@ SquadAutoMortars is a tool designed to enhance your gaming experience in Squad b
 
 ## Installation
 To download and install SquadAutoMortars:
-1. Go to [https://github.com/Devil4ngle/squadmortar/releases](https://github.com/Devil4ngle/squadmortar/releases).
-2. Download the latest release by clicking on `squadautomortar.zip`.
+1. Go to [https://codeload.github.com/Devil4ngle/squadmortar/zip/refs/heads/release](https://codeload.github.com/Devil4ngle/squadmortar/zip/refs/heads/release).
+2. Download the zip.
 Note: The release is approximately 300 MB due to included maps.
-3. Unzip the downloaded file.
-4. Inside the folder, run `squadmortar.exe` while squad is already running.
+1. Unzip the downloaded file.
+2. Inside the folder, run `squadmortar.exe` while squad is already running.
 
 Note: Don't move `squadmortar.exe` from it's original folder.
 
@@ -44,7 +44,7 @@ Feel free to join our Discord community for discussions, support, and updates: [
 No, the usage of SquadAutoMortars does not violate Easy Anti-Cheat (EAC) policies. The program operates without attaching to or reading memory from the Squad game process. It solely captures screenshots using standard operating system APIs and sends keyboard inputs (a, w, s, d). The code is open source, providing transparency and assurance.
 
 ## Supported Sizes
-1024x768, 1920x1080, 2560x1440, 3480x1600
+1024x768, 1920x1080, 2560x1440, 3840x1600
 
 ## Unsupported Screen Size
 If your screen size is not supported, please join our Discord community for assistance: [SquadAutoMortars Discord](https://discord.gg/Qc5y4satdz).
