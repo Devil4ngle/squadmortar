@@ -31,7 +31,7 @@ Note: The release is approximately 300 MB due to included maps.
 Note: Don't move `squadmortar.exe` from it's original folder.
 
 ## EAC Ban Disclaimer
-No, the usage of SquadAutoMortars does not violate Easy Anti-Cheat (EAC) policies. The program operates without attaching to or reading memory from the Squad game process. It solely captures screenshots and sends keyboard inputs (a, w, s, d). The code is open source, providing transparency and assurance. However, users should be cautious, as the use of third-party tools, even if not flagged by EAC, may still be against Offworld Industries (O.W.I.) policies and could result in a ban on official servers. Use at your own risk.
+No, the usage of SquadAutoMortars does not violate Easy Anti-Cheat (EAC) policies. The program operates without attaching to or reading memory from the Squad game process. It solely captures screenshots and sends keyboard inputs (a, w, s, d). The code is open source, providing transparency and assurance. However, users should be cautious, as the use of third-party tools, even if not flagged by EAC, may still be against Offworld Industries (O.W.I.) policies and could result in a ban on official servers. It is important to note that using SquadAutoMortars on unofficial servers or in local hosted gameplay is generally considered fine. However, users are advised to review and comply with the specific rules and policies of the server they are playing on to avoid any potential issues. Use at your own risk.
 
 ## Supported Sizes
 1024x768, 1920x1080, 2560x1440, 3840x1600
