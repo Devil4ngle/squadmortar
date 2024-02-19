@@ -8,9 +8,6 @@ title: Squad Mortar
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   alt="SquadAutoMortars Demo Video"></iframe>
 
-## Overview
-SquadAutoMortars is a tool designed to enhance your gaming experience in Squad by automating mortar control and providing a synchronized map overlay. This tool is created with the goal of improving mortar adjustments and map coordination.
-
 ## Requirements
 - Windows operating system
 
@@ -23,13 +20,9 @@ SquadAutoMortars is a tool designed to enhance your gaming experience in Squad b
 
    Capture a screenshot of the in-game map and overlay it with the squadmortar map.
 
-- **Quick Adjustments:**
-
-   Swiftly adjust mortars on command.
-
 ## Installation
 To download and install SquadAutoMortars:
-1. Go to [https://codeload.github.com/Devil4ngle/squadmortar/zip/refs/heads/release](https://codeload.github.com/Devil4ngle/squadmortar/zip/refs/heads/release).
+1. Go to [https://github.com/Devil4ngle/squadmortar-release/archive/refs/heads/main.zip](https://github.com/Devil4ngle/squadmortar-release/archive/refs/heads/main.zip).
 2. Download the zip.
 Note: The release is approximately 300 MB due to included maps.
 1. Unzip the downloaded file.
@@ -37,18 +30,14 @@ Note: The release is approximately 300 MB due to included maps.
 
 Note: Don't move `squadmortar.exe` from it's original folder.
 
-## Join Discord
-Feel free to join our Discord community for discussions, support, and updates: [SquadAutoMortars Discord](https://discord.gg/Qc5y4satdz).
-
 ## EAC Ban Disclaimer
-No, the usage of SquadAutoMortars does not violate Easy Anti-Cheat (EAC) policies. The program operates without attaching to or reading memory from the Squad game process. It solely captures screenshots using standard operating system APIs and sends keyboard inputs (a, w, s, d). The code is open source, providing transparency and assurance.
+No, the usage of SquadAutoMortars does not violate Easy Anti-Cheat (EAC) policies. The program operates without attaching to or reading memory from the Squad game process. It solely captures screenshots and sends keyboard inputs (a, w, s, d). The code is open source, providing transparency and assurance. However, users should be cautious, as the use of third-party tools, even if not flagged by EAC, may still be against Offworld Industries (O.W.I.) policies and could result in a ban on official servers. Use at your own risk.
 
 ## Supported Sizes
 1024x768, 1920x1080, 2560x1440, 3840x1600
 
 ## Unsupported Screen Size
 If your screen size is not supported, please join our Discord community for assistance: [SquadAutoMortars Discord](https://discord.gg/Qc5y4satdz).
-
 ## What is this?
 
 PlaySquad, SquadMortar, SquadAutoMortars, Squad Mortar Calculator, Squad Mortar, Squad Auto Mortars
