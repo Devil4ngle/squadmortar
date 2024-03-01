@@ -4,8 +4,9 @@ node_modules/
 compressed/
 raw/
 dist/
-public/*.js
-public/*.js
-public/merged/
+frontend/public/*.js
+frontend/public/*.js
+frontend/public/merged/
+gh-pages
 visual.au3
 language-server-log.txt
