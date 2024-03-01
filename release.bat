@@ -10,6 +10,12 @@ mkdir gh-pages
 
 git clone --branch gh-pages --single-branch https://github.com/Devil4ngle/squadmortar gh-pages
 
+cd gh-pages
+
+for /F "delims=" %%i in ('dir /b') do (if not "%%i"=="\.git" rmdir /s /q "%%i" 2>nul & del /f /q "%%i" 2>nul)
+
+cd .. 
+
 xcopy /s /e frontend\public gh-pages\
 
 cd gh-pages
