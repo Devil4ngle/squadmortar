@@ -3,7 +3,7 @@ import os
 import json
 import sys
 
-VERSION = "2.4.1"
+VERSION = "2.4.2"
 
 DEFAULT_CONFIG = {
     "hotkey": "!",
@@ -11,6 +11,7 @@ DEFAULT_CONFIG = {
     "coordinates_y": 5,
     "font_size": 17,
     "coordinates_visible": True,
+    "high_quality": False,
     "map_coordinates": {
         "top": 0,
         "left": 0,
@@ -74,7 +75,9 @@ def load_config():
         "coordinates_y": read_config("coordinates_y"),
         "font_size": read_config("font_size"),
         "coordinates_visible": read_config("coordinates_visible"),
+        "high_quality": read_config("high_quality"),
     }
+    
 
 def get_icon_path():
     """Returns the path to the application icon"""

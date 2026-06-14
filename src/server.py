@@ -4,6 +4,7 @@ import threading
 from websockets.server import serve
 import tkinter as tk
 from image_layering import capture_screenshot, overlay_images, get_cached_image
+from feedback import play_shutter_sound, CaptureNotification  
 import keyboard
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -81,6 +82,8 @@ class CoordinateWindow:
 
 # Global list to track all coordinate windows
 coordinate_windows = []
+# Singleton toast that confirms a screenshot was taken (sound + on-screen text).
+_capture_notifier = None
 
 def register_coordinate_window(window):
     coordinate_windows.append(window)
@@ -89,6 +92,15 @@ def update_all_windows(settings):
     for window in coordinate_windows:
         window.update_settings(settings)
 
+def notify_capture(settings):
+    global _capture_notifier
+    play_shutter_sound()
+    try:
+        if _capture_notifier is None:
+            _capture_notifier = CaptureNotification(settings)
+        _capture_notifier.notify()
+    except Exception:
+        pass
 async def handle_map(websocket, settings):
     try:
         await websocket.send("Open")
@@ -99,6 +111,7 @@ async def handle_map(websocket, settings):
             if last_key_pressed == settings["hotkey"]:
                 last_key_pressed = None
                 zoomed_in_image = capture_screenshot()
+                notify_capture(settings) 
                 
                 await websocket.send("Map")
                 new_map_name = await websocket.recv()
@@ -109,9 +122,10 @@ async def handle_map(websocket, settings):
                     current_map_name = new_map_name
                 
                 modified_image_data = overlay_images(
-                    image_data if image_data is not None else get_cached_image(current_map_name).tobytes(), 
-                    zoomed_in_image, 
-                    current_map_name
+                    image_data if image_data is not None else b"",
+                    zoomed_in_image,
+                    current_map_name,
+                    "quality" if settings.get("high_quality") else "speed"
                 )
                 await websocket.send(modified_image_data)
                 await asyncio.sleep(0.5)

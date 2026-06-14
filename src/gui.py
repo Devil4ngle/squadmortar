@@ -153,6 +153,12 @@ class SettingsCallbacks:
         from server import update_all_windows
         update_all_windows(self.settings)
         self.update_gui()
+    
+    def toggle_quality(self):
+        new_state = not self.settings["high_quality"]
+        self.settings["high_quality"] = new_state
+        save_config("high_quality", new_state)
+        self.update_gui()
 
     def countdown_and_select_map(self, button_map_area):
         countdown_window = tk.Toplevel()
@@ -202,6 +208,9 @@ def create_gui(settings):
         button_coordinates.config(
             text=f"Overlay Window Position: X:{settings['coordinates_x']} Y:{settings['coordinates_y']}"
         )
+        button_quality.config(
+            text="Overlay Quality: " + ("HIGH (slower)" if settings["high_quality"] else "FAST")
+        )
 
     callbacks = SettingsCallbacks(settings, update_gui_elements)
 
@@ -224,6 +233,12 @@ def create_gui(settings):
         frames[0],
         text=f"Minimap Screenshot Hotkey: '{settings['hotkey']}'",
         command=callbacks.ask_hotkey,
+        **button_style
+    )
+    button_quality = tk.Button(
+        frames[0],
+        text="Overlay Quality: " + ("HIGH (slower)" if settings["high_quality"] else "FAST"),
+        command=callbacks.toggle_quality,
         **button_style
     )
 
@@ -280,7 +295,7 @@ def create_gui(settings):
 
     # Pack buttons in frames
     for frame_idx, frame_buttons in enumerate([
-        [button_toggle_coordinates, button_hotkey],
+        [button_toggle_coordinates, button_quality, button_hotkey],
         [button_font_size, button_coordinates, button_map_area],
         [button_github, button_discord, button_update, button_html]
     ]):
